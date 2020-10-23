@@ -1,9 +1,25 @@
+@font-face {
+    font-family: "SFProDisplay-Regular";
+    src: local("SFProDisplay-Regular"),
+        url("/fonts/SFProDisplay-Regular.woff2") format("woff2"),
+        url("/fonts/SFProDisplay-Regular.woff") format("woff");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "SFProDisplay-Semibold";
+    src: local("SFProDisplay-Semibold"),
+        url("/fonts/SFProDisplay-Semibold.woff2") format("woff2"),
+        url("/fonts/SFProDisplay-Semibold.woff") format("woff");
+    font-weight: bold;
+}
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'SFProDisplay-Regular', sans-serif;
     background: #E5E5E5;
 }
 
@@ -127,8 +143,10 @@ body {
 }
 
 .post_title {
+    font-family: 'SFProDisplay-Semibold', serif;
     margin: 0 0 19px 0;
-    font-weight: 600;
+    font-family: 'SFProDisplay-Semibold',
+        serif;
     font-size: 16px;
     line-height: 24px;
     color: #262626;
@@ -243,7 +261,7 @@ body {
 }
 
 .user_name {
-    font-weight: 600;
+    font-family: 'SFProDisplay-Semibold', serif;
     font-size: 16px;
     line-height: 24px;
     color: #595959;
@@ -341,7 +359,8 @@ body {
 
 .card_title {
     margin: 0;
-    font-weight: 600;
+    font-family: 'SFProDisplay-Semibold',
+        serif;
     font-size: 16px;
     line-height: 24px;
     color: #595959;
@@ -354,7 +373,8 @@ body {
 .card_body_title {
     margin: 0 0 10px;
     text-decoration: none;
-    font-weight: 600;
+    font-family: 'SFProDisplay-Semibold',
+        serif;
     font-size: 16px;
     line-height: 24px;
     color: #D48806;
@@ -400,7 +420,8 @@ body {
 .add_text {
     background: #FFFFFF;
     border: 1px solid #E8E8E8;
-    font-weight: 600;
+    font-family: 'SFProDisplay-Semibold',
+        serif;
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 16px;
@@ -525,6 +546,7 @@ body {
     .add_buttons button:nth-child(2) {
         margin-left: 0;
         margin-right: 0;
+
     }
 
     .add_buttons .button_outline {
